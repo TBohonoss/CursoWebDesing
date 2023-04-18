@@ -1,6 +1,46 @@
+:root {
+    --cinza: #444;
+    --vermelho: #9f461f;
+    --vermelho-claro: #c79090;
+    --laranja: #fac877;
+}
+
 body {
     width: 80%;
     margin: auto;
     /* margin: auto centraliza na horizontal */
-    font-size: sans-serif;
+    font-family: Verdana, helvetica, sans-serif;
+    color: var(--cinza);
+}
+
+h1 {
+    color: var(--vermelho);
+    text-align: center;
+    background-color: var(--laranja);
+    font-size: 46px;
+}
+
+h2 {
+    color: var(--vermelho);
+    background-color: var(--vermelho-claro);
+    font-size: 36px;
+    border-bottom: solid 3px var(--vermelho);
+    padding: 10px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
