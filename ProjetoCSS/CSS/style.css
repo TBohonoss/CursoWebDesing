@@ -1,16 +1,21 @@
 :root {
     --cinza-claro: #ccc;
-    --cinza: #6a6d6b;
+    --cinza: #6b6c68;
     --cinza-escuro: #333;
     --branco: #fff;
     --preto: #000;
-    
+}
+
+*{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--cinza-claro);
-    margin: 0;
 }
 
 #principal{    
@@ -28,7 +33,7 @@ body {
     height: 500px;
     background-position: right center;
     background-size: cover;
-    border-top: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 .hero nav li {
@@ -65,6 +70,14 @@ body {
     text-shadow: 3px 3px 3px var(--cinza-escuro);
 }
 
+.hero-content p {
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 2px solid var(--branco);
+    margin-top: 40px;
+}
+
 main{
     width: 80%;
     margin: auto;
@@ -73,7 +86,30 @@ main{
 .content-section {
     background-color: var(--branco);
     padding: 15px;
-    margin-top: 15px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.card {
+    width: 32%;
+    float: left;
+}
+
+.card-1, .card-2 {
+    margin-right: 2%;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card p {
+    background-color: #444;
+    padding: 15px;
+    text-transform: uppercase;
+    color: var(--branco);
+    letter-spacing: 2px;
 }
 
 .content-header {
@@ -81,15 +117,19 @@ main{
     padding: 10px;
 }
 
-article h2 {
-    margin: 0;
+article p {
+    padding-top: 20px;
+}
+
+#segundo {
+    padding-bottom: 20px;
 }
 
 footer {
     background-color: var(--cinza);
     height: 80px;
     line-height: 80px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 footer p {
