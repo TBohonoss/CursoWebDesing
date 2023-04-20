@@ -46,20 +46,25 @@ main{
     margin-top: 15px;
 }
 
+.content-header {
+    border-bottom: 2px solid var(--cinza-claro);
+    padding: 10px;
+}
+
 article h2 {
-    border-bottom: 3px solid var(--cinza-claro);
+    margin: 0;
 }
 
 footer {
     background-color: var(--cinza);
-    height: 70px;
-    padding-top: 25px;
+    height: 80px;
+    line-height: 80px;
     margin-top: 15px;
 }
 
 footer p {
     text-align: center;
-    font-size: 16px;
-    color: #fff;
+    font-size: 14px;
+    color: var(--branco);
     text-shadow: 2px 2px 2px black;
 }
