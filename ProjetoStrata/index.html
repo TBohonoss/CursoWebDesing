@@ -104,35 +104,47 @@
             <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu
                 lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
 
-            <form action="#" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+            <div class="row">
+                <div class="col-2-3">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-2">
+                                <label for="nome">Nome</label>
+                                <input placeholder="Exemplo João S" type="text" name="nome" id="nome">
+                            </div>
 
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email">
+                            <div class="col-2">
+                                <label for="email">Email</label>
+                                <input placeholder="email@server.com" type="text" name="email" id="email">
+                            </div>
+                        </div>
 
-                <label for="mensagem">Digite sua mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+                        <label for="mensagem">Digite sua mensagem</label>
+                        <textarea placeholder="Digite aqui a sua mensagem . . ." name="mensagem" id="mensagem"></textarea>
 
-                <input type="submit" value="Enviar">
-            </form>
+                        <input type="submit" value="Enviar" class="button-default button-default-stroke button-defaul-big">
+                    </form>
+                </div>
 
-            <address>
-                <p>
-                    <span>Endreço</span>
-                    Endereço: 1234 Somewhere Rd. Nashville, TN 00000 United States
-                </p>
+                <div class="col-1-3">
+                    <address>
+                        <p>
+                            <span>Endreço</span>
+                            Endereço: 1234 Somewhere Rd. Nashville, TN 00000 United States
+                        </p>
 
-                <p>
-                    <span>Telefone</span>
-                    000-000-000
-                </p>
+                        <p>
+                            <span>Telefone</span>
+                            000-000-000
+                        </p>
 
-                <p>
-                    <span>E-mail</span>
-                    email@server.com
-                </p>
-            </address>
+                        <p>
+                            <span>E-mail</span>
+                            email@server.com
+                        </p>
+                    </address>
+                </div>
+            </div> <!-- row -->
         </section>
 
         <section class="main-content-section">
@@ -219,7 +231,7 @@
                     <p>
                         <a href="#" class="button-default button-default-small">Default</a>
                         <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
-                    </p>                    
+                    </p>
                 </div>
 
                 <div class="col-2">
@@ -234,146 +246,146 @@
                             class="button-default button-default-full button-default-small button-default-stroke">Default</a>
                     </p>
                 </div>
-            </div><!---row--->    
+            </div><!---row--->
 
-                <h4>Table</h4>
-                <h5>Default</h5>
+            <h4>Table</h4>
+            <h5>Default</h5>
 
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td>Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td>Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h5>Alternate</h5>
+            <h5>Alternate</h5>
 
-                <table class="table table-alternate">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td>Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table class="table table-alternate">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Item One</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Two</td>
+                        <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Three</td>
+                        <td>Morbi faucibus arcu accumsan lorem.</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Four</td>
+                        <td>Vitae integer tempus condimentum.</td>
+                        <td>19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Item Five</td>
+                        <td>Ante turpis integer aliquet porttitor.</td>
+                        <td>29.99</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <h5>Buttons</h5>
+            <h5>Buttons</h5>
 
-                <p>
-                    <button class="button-default button-defaul-small">Default</button>
-                    <button class="button-default button-default-small button-default-stroke">Default</button>
-                </p>
+            <p>
+                <button class="button-default button-defaul-small">Default</button>
+                <button class="button-default button-default-small button-default-stroke">Default</button>
+            </p>
 
-                <p>
-                    <button class="button-default button-defaul-full">Default</button>
-                    <button class="button-default button-default-full button-default-stroke">Default</button>
-                </p>
+            <p>
+                <button class="button-default button-defaul-full">Default</button>
+                <button class="button-default button-default-full button-default-stroke">Default</button>
+            </p>
 
-                <p>
-                    <button class="button-default button-defaul-full button-defaul-small">Default</button>
-                    <button
-                        class="button-default button-default-full button-default-small button-default-stroke">Default</button>
-                </p>
+            <p>
+                <button class="button-default button-defaul-full button-defaul-small">Default</button>
+                <button
+                    class="button-default button-default-full button-default-small button-default-stroke">Default</button>
+            </p>
 
-                <input type="submit" class="button-default" value="mandar">
+            <input type="submit" class="button-default" value="mandar">
 
-                <h5>Forms</h5>
+            <h5>Forms</h5>
 
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
 
-                <select>
-                    <option value="0">Selecione ...</option>
-                    <option value="1">Html</option>
-                    <option value="2">CSS</option>
-                    <option value="3">Javascript</option>
-                </select>
+            <select>
+                <option value="0">Selecione ...</option>
+                <option value="1">Html</option>
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option>
+            </select>
 
-                <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
-                <label><input type="radio" value="media" name="prioridade">Média Prioridade</label>
-                <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
+            <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
+            <label><input type="radio" value="media" name="prioridade">Média Prioridade</label>
+            <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
 
-                <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
-                <label><input type="checkbox" name="human" value="1">Sou Humano</label>
+            <label><input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+            <label><input type="checkbox" name="human" value="1">Sou Humano</label>
 
-                <label for="msg">Mensagem:</label>
-                <textarea placeholder="digite a sua mensagem" id="msg"></textarea>
+            <label for="msg">Mensagem:</label>
+            <textarea placeholder="digite a sua mensagem" id="msg"></textarea>
 
-                <input type="submit" class="button-default" value="Enviar">
-                <input type="reset" class="button-default-stroke" value="Limpar">
+            <input type="submit" class="button-default" value="Enviar">
+            <input type="reset" class="button-default-stroke" value="Limpar">
         </section>
 
         <section class="main-content-section">

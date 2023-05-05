@@ -77,6 +77,25 @@ ol {
     padding-right: 0.5em;
 }
 
+input, label, textarea {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    background: #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin-bottom: 15px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #49bf9d;
+    outline: none;
+}
+
 .button-default {
     background-color: #49bf9d;
     border: 2px solid #49bf9d;
@@ -85,6 +104,7 @@ ol {
     border-radius: 5px;
     font-size: .8em;
     display: inline-block;
+    width: auto;
 }
 
 .button-default-stroke {
@@ -93,8 +113,16 @@ ol {
     color: inherit;
 }
 
+textarea {
+    height: 10em;
+}
+
 .button-default-small {
     font-size: .65em;
+}
+
+.button-defaul-big {
+    font-size: 1em;
 }
 
 .button-default-full {
@@ -189,11 +217,31 @@ ol {
     box-sizing: border-box;
 }
 
+/* Grid */
 .row {
     overflow: auto;
 }
 
+.col-2:first-child {
+    margin-right: 1%;
+}
+
+.col-2:last-child {
+    margin-left: 1%;
+}
+
 .col-2 {
-    width: 50%;
+    width: 49%;
+    float: left;
+}
+
+.col-2-3 {
+    width: 65%;
+    float: left;
+}
+
+.col-1-3 {
+    width: 32%;
+    margin-left: 3%;
     float: left;
 }
