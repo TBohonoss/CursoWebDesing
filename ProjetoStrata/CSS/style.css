@@ -77,13 +77,13 @@ ol {
     padding-right: 0.5em;
 }
 
-input, label, textarea {
+input, label, textarea, select {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
 }
 
-input, textarea {
+input, textarea, select {
     background: #ccc;
     padding: 15px;
     border-radius: 5px;
@@ -91,9 +91,17 @@ input, textarea {
     margin-bottom: 15px;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
     border: 2px solid #49bf9d;
     outline: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    height: 10em;
 }
 
 .button-default {
@@ -111,10 +119,6 @@ input:focus, textarea:focus {
     background-color: white;
     border-color: #efefef;
     color: inherit;
-}
-
-textarea {
-    height: 10em;
 }
 
 .button-default-small {
