@@ -20,6 +20,10 @@ p {
     margin: 0 0 2em;
 }
 
+img {
+    max-width: 100%;
+}
+
 sub,
 sup {
     font-size: 12px;
@@ -77,13 +81,18 @@ ol {
     padding-right: 0.5em;
 }
 
-input, label, textarea, select {
+input,
+label,
+textarea,
+select {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     background: #ccc;
     padding: 15px;
     border-radius: 5px;
@@ -91,12 +100,15 @@ input, textarea, select {
     margin-bottom: 15px;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     border: 2px solid #49bf9d;
     outline: none;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
     width: auto;
 }
 
@@ -132,6 +144,10 @@ textarea {
 .button-default-full {
     display: block;
     text-align: center;
+}
+
+.imagem-link {
+    border: 0;    
 }
 
 .table {
@@ -219,6 +235,16 @@ textarea {
     margin-left: 35%;
     padding: 124px 54px 72px;
     box-sizing: border-box;
+}
+
+.main-header-link img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recent-works-card img {
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 /* Grid */
