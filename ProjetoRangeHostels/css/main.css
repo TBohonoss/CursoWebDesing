@@ -8,8 +8,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Oxygen";
 }
 
-
-
 .clearfix::after, .row:after {
     content: ' ';
     display: block;
@@ -65,6 +63,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em;
     text-align: center;
     background: #f6f6f6;
+}
+
+.icon-play {
+    height: 5em;
+    display: none;
+}
+
+.icon-play img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .top-content-title {
@@ -180,7 +188,15 @@ h1, h2, h3, h4, h5, h6 {
            
     .top-content{
         background: #521a66;
+        background-repeat: no-repeat;
         color: white;
+    }
+
+    .icon-play {
+        display: block;
+        padding: 2em 0 0;
+        height: 6em;
+
     }
 
     .top-content-title, .top-content-subtitle {
@@ -201,20 +217,36 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 1000px) {
     .top-content {
         background: #521a66 url(../images/bg_topo_1198x670.jpg);
-        height: 15em;
-        padding-top: 15em;
-        
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 20em;
+        padding-top: 17em;
+    }
+
+    .icon-play {
+        height: 8em;
+        padding: 0;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1184px) {
+    body {
+        max-width: 1600px;
+        margin: auto;
+    }
+
     .top-content {
         background-image: url(../images/bg_topo_1600x1374.jpg);
         background-position: center top;
-        padding: 19em 18em 10em;
+        padding: 19em 20em 10em;
+        
     }
 
-   .col-1_4 {
+    .icon-play {
+        padding: 5em 0 0;
+    }
+
+    .col-1_4 {
         width: 23%;
         margin: 1%;
    }
@@ -227,5 +259,5 @@ h1, h2, h3, h4, h5, h6 {
 
    .main-content-article .button {
     float: none;
-}
+    }
 }
