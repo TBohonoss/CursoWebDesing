@@ -13,6 +13,12 @@ body {
     margin: auto;
 }
 
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
 .button {
     display: inline-block;
     padding: 1em 2.5em;
@@ -144,4 +150,43 @@ body {
     font-size: 1.1em;
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 30px;
+    }
+
+    .top-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .top-nav li {
+        display: inline-block;
+    }
+
+    .top-nav a {
+        color: #713A84;
+        font-weight: bold;
+    }
+
+    .top-nav a:hover {
+        background: #e7d9fc;
+    }
+           
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+
+    .top-content-title, .top-content-subtitle {
+        color: white;
+    }
 }
