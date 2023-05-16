@@ -13,7 +13,7 @@ body {
     margin: auto;
 }
 
-.clearfix::after {
+.clearfix::after, .row:after {
     content: ' ';
     display: block;
     clear: both;
@@ -160,7 +160,7 @@ body {
     .top-nav{
         background: transparent;
         float: right;
-        margin-top: 30px;
+        margin-top: 35px;
     }
 
     .top-nav ul {
@@ -188,5 +188,15 @@ body {
 
     .top-content-title, .top-content-subtitle {
         color: white;
+    }
+
+    .col-1_4 {
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button {
+        float: right;
     }
 }
