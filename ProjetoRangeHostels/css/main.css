@@ -159,9 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 768px) {
     .top-content {
-        background-image: radial-gradient( rgb(126, 126, 126), transparent);
-        background-position: center -200px;
+        background-image: radial-gradient( rgb(169, 169, 169), transparent);
+        background-position: center -30px;
         background-repeat: no-repeat;
+        background-size: 100% 30%;
     }
 }
 
